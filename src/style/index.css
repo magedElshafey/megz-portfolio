@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fluid-container {
+    @apply w-full px-5 md:px-10 lg:px-16;
+}
+
+.space-between-sections {
+    @apply mb-8 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-20
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/public/fonts/tajawal-v10-arabic-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/public//fonts/tajawal-v10-arabic-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/public/fonts/tajawal-v10-arabic-700.woff2') format('woff2');
+}
+
+/*========= enlish fonts ============*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-Regular.woff') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-Medium.woff') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-SemiBold.woff') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-Bold.woff') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-ExtraBold.woff') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/fonts/en/Poppins-Black.woff') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainColor: #00c6f1;
+}
+
+body {
+    overflow-x: hidden;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+    background-color: #222;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* default classes */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h3 {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h4 {
+        font-size: 1.125rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h6 {
+        font-size: 0.875rem;
+    }
+}
