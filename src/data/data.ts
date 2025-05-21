@@ -2,6 +2,7 @@
 import { Nav } from "../types/Nav";
 import { Socials } from "../types/Socials";
 import { Service } from "../types/Services";
+import { PortfolioTypes } from "../types/PortfolioTypes";
 // assets
 import { FaLinkedin, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -23,6 +24,8 @@ import serv15 from "../assets/serv-15.png";
 import serv16 from "../assets/serv-16.png";
 import serv17 from "../assets/serv-17.png";
 import serv18 from "../assets/serv-18.png";
+import port1 from "../assets/port-01.png";
+import port2 from "../assets/port-02.png";
 export const navLinks: Nav[] = [
   {
     name: "Home",
@@ -181,5 +184,23 @@ export const service: Service[] = [
     title: "Content Management System (CMS) Integration",
     descreption:
       "I can integrate or build a custom CMS to help you manage your website’s content easily.",
+  },
+];
+export const portfolios: PortfolioTypes[] = [
+  {
+    id: 1,
+    title: "calla store",
+    descreption:
+      "A multi-category online store offering a wide range of products such as clothing, toys, electronics, and more. In this project, I focused on delivering a smooth and user-friendly experience while maintaining the brand’s unique visual identity.",
+    slug: "calla-store",
+    image: port1,
+  },
+  {
+    id: 1,
+    title: "iLAWFAIR store",
+    descreption:
+      "An intelligent and specialized platform for selling legal books, combining modern technology with trusted knowledge content to meet the needs of lawyers, students, researchers, and legal publishers in the Arab world.",
+    slug: "calla-store",
+    image: port2,
   },
 ];
