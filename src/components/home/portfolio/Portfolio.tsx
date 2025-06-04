@@ -1,15 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { portfolios } from "../../../data/data";
-import { useNavigate } from "react-router-dom";
 import { PortfolioTypes } from "../../../types/PortfolioTypes";
-import createSlug from "../../../utils/createSlug";
 import { IoIosArrowBack } from "react-icons/io";
 
 const Portfolio = () => {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const handleNavigate = (item: PortfolioTypes) => {
-    navigate(`/portfolio/${item?.id}/${createSlug(item?.slug)}`);
+    window.open(item?.url, "_blank");
   };
   return (
     <div id="portfolio" className="fluid-container space-between-sections">
@@ -19,7 +16,7 @@ const Portfolio = () => {
       {portfolios?.map((item, index: number) => (
         <div
           key={index}
-          className="flex items-center gap-4 md:gap-6 lg:gp-8 xl:gap-10 2xl:gap-12 flex-col md:flex-row mb-6 md:mb-7 lg:mb-8 xl:mb-9 2xl:mb-10"
+          className="flex items-center gap-4 md:gap-6 lg:gp-8 xl:gap-10 2xl:gap-12 flex-col md:flex-row mb-6 md:mb-7 lg:mb-8 xl:mb-9 2xl:mb-12"
         >
           <div className="w-full md:w-1/3">
             <div
@@ -28,7 +25,10 @@ const Portfolio = () => {
             >
               <p>{t(item?.title)}</p>
             </div>
-            <div className="flex w-fit items-center gap-4 cursor-pointer group text-mainColor mb-3 md:mb-4 lg:mb-5">
+            <div
+              onClick={() => handleNavigate(item)}
+              className="flex w-fit items-center gap-4 cursor-pointer group text-mainColor mb-3 md:mb-4 lg:mb-5"
+            >
               <IoIosArrowBack
                 size={20}
                 className={`${
@@ -50,7 +50,7 @@ const Portfolio = () => {
               alt={item?.title}
               loading="lazy"
               src={item?.image}
-              className="w-full object-cover h-[370px] md:h-[420px] lg:h-[470px] xl:h-[520px] 2xl:h-[570px]"
+              className="w-full md:flex-1 object-cover h-[370px] md:h-[420px] lg:h-[470px] xl:h-[520px] 2xl:h-[570px]"
             />
           </div>
         </div>

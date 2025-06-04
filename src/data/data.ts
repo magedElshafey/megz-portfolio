@@ -50,7 +50,7 @@ export const navLinks: Nav[] = [
 
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 
@@ -194,6 +194,7 @@ export const portfolios: PortfolioTypes[] = [
       "A multi-category online store offering a wide range of products such as clothing, toys, electronics, and more. In this project, I focused on delivering a smooth and user-friendly experience while maintaining the brand’s unique visual identity.",
     slug: "calla-store",
     image: port1,
+    url: "https://calla-app.com/",
   },
   {
     id: 1,
@@ -202,5 +203,6 @@ export const portfolios: PortfolioTypes[] = [
       "An intelligent and specialized platform for selling legal books, combining modern technology with trusted knowledge content to meet the needs of lawyers, students, researchers, and legal publishers in the Arab world.",
     slug: "calla-store",
     image: port2,
+    url: "https://ilawfair.com/",
   },
 ];

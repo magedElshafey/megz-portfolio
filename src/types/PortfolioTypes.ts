@@ -4,4 +4,5 @@ export interface PortfolioTypes {
   slug: string;
   image: string;
   id: number;
+  url: string;
 }

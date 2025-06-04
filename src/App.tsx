@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 const Home = lazy(() => import("./app/home/page"));
 const Services = lazy(() => import("./app/services/Services"));
 const NotFound = lazy(() => import("./app/not-found/page"));
-
 const App = () => {
   useLocalizeDocumentAttributes();
   const { t } = useTranslation();
