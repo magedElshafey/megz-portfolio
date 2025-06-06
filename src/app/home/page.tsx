@@ -5,10 +5,12 @@ import { service } from "../../data/data";
 import { useTranslation } from "react-i18next";
 import Skills from "../../components/home/skills/Skills";
 import Statistics from "../../components/home/statistics/Statistics";
+// import Banner from "../../components/home/banner/Banner";
+import Portfolio from "../../components/home/portfolio/Portfolio";
 const HomePage = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <About />
       <div id="services" className="fluid-container space-between-sections">
         <p className="font-black text-md md:text-md lg:text-lg xl:text-xl 2xl:text-4xl mb-4 md:mb-5 lg:mb-6 xl:mb-7 2xl:mb-8 text-center">
@@ -30,7 +32,9 @@ const HomePage = () => {
       </div>
       <Skills />
       <Statistics />
-    </div>
+      {/* <Banner /> */}
+      <Portfolio />
+    </>
   );
 };
 

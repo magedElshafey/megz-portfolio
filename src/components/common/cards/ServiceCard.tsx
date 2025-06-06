@@ -8,7 +8,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ item, index }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <motion.div
@@ -23,7 +23,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ item, index }) => {
         className="max-w-16 max-h-16 object-contain"
         loading="lazy"
       />
-      <p className="font-bold text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-mainColor text-center">
+      <p
+        className={`font-bold  text-mainColor text-center ${
+          i18n.language === "ar"
+            ? "text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+            : "text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl"
+        }`}
+      >
         {t(item?.title)}
       </p>
       <p className="text-center text-gray-600 dark:text-gray-300">

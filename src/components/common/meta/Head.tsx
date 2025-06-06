@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
 interface HeadProps {
   title?: string;
   description?: string;
@@ -14,14 +13,10 @@ const Head: React.FC<HeadProps> = ({
   image,
   url = "http://www.megzz.com",
 }) => {
-  const { pathname } = useLocation();
   return (
     <Helmet>
-      {pathname === "/" ? (
-        <meta name="viewport" content="width=1280" />
-      ) : (
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      )}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       <title>{title}</title>
       {description && <meta name="description" content={description} />}
       {keywords && <meta name="keywords" content={keywords} />}

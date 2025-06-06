@@ -4,6 +4,7 @@ import { Socials } from "../types/Socials";
 import { Service } from "../types/Services";
 import { Skill } from "../types/Skill";
 import { Statistic } from "../types/Statistics";
+import { PortfolioTypes } from "../types/PortfolioTypes";
 // assets
 import { FaLinkedin, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -55,6 +56,8 @@ import {
   SiI18Next,
 } from "react-icons/si";
 
+import port1 from "../assets/port-01.png";
+import port2 from "../assets/port-02.png";
 export const navLinks: Nav[] = [
   {
     name: "Home",
@@ -79,7 +82,7 @@ export const navLinks: Nav[] = [
 
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
   },
 ];
 
@@ -273,3 +276,23 @@ export const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
 };
+export const portfolios: PortfolioTypes[] = [
+  {
+    id: 1,
+    title: "calla store",
+    descreption:
+      "A multi-category online store offering a wide range of products such as clothing, toys, electronics, and more. In this project, I focused on delivering a smooth and user-friendly experience while maintaining the brand’s unique visual identity.",
+    slug: "calla-store",
+    image: port1,
+    url: "https://calla-app.com/",
+  },
+  {
+    id: 1,
+    title: "iLAWFAIR store",
+    descreption:
+      "An intelligent and specialized platform for selling legal books, combining modern technology with trusted knowledge content to meet the needs of lawyers, students, researchers, and legal publishers in the Arab world.",
+    slug: "calla-store",
+    image: port2,
+    url: "https://ilawfair.com/",
+  },
+];
