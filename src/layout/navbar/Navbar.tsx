@@ -25,7 +25,7 @@ const Navbar = () => {
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.4 }}
-        className="fixed py-4 top-0 left-0 w-screen bg-white/90 dark:bg-[#111]/90 shadow-md z-50 transition-colors duration-300 backdrop-blur-md border-b border-b-mainColor"
+        className="fixed py-4 top-0 left-0 w-screen bg-white/90 dark:bg-[#111]/90 shadow-md z-50 transition-colors duration-300 backdrop-blur-md "
       >
         <div className="fluid-container flex items-center justify-between gap-4">
           <Logo logo={mode === "light" ? logo : logo2} />

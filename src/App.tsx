@@ -5,7 +5,6 @@ import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loader from "./components/common/loader/Loader";
 import FixedBtn from "./components/common/buttons/FixedBtn";
-import fav from "../public/icons/favicon.ico";
 import Head from "./components/common/meta/Head";
 import { useTranslation } from "react-i18next";
 const Home = lazy(() => import("./app/home/page"));
@@ -17,7 +16,12 @@ const App = () => {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen flex flex-col">
-      <Head favicon={fav} title={t("megz")} />
+      <Head
+        title={t("megz")}
+        description={t(
+          "Welcome to the portfolio of Majed Elshafey – a passionate Full Stack Developer specializing in React.js and PHP Laravel. Explore projects, skills, and contact details all in one place."
+        )}
+      />
       <Suspense
         fallback={
           <div className="w-screen h-screen flex justify-center items-center">

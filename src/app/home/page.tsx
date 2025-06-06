@@ -3,7 +3,8 @@ import ServiceCard from "../../components/common/cards/ServiceCard";
 import About from "../../components/home/about/About";
 import { service } from "../../data/data";
 import { useTranslation } from "react-i18next";
-import Banner from "../../components/home/banner/Banner";
+import Skills from "../../components/home/skills/Skills";
+import Statistics from "../../components/home/statistics/Statistics";
 const HomePage = () => {
   const { t } = useTranslation();
   return (
@@ -27,7 +28,8 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-      <Banner />
+      <Skills />
+      <Statistics />
     </div>
   );
 };

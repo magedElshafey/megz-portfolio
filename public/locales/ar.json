@@ -7,7 +7,7 @@
   "skills": "المهارات",
   "statistics": "الإحصائيات",
   "Contact": "تواصل معي",
-  "megz": "ميجز | مطور مواقع",
+  "megz": " (React JS / Laravel) ميجز | مطور مواقع",
   "Living, learning, & leveling up one day at a time.": "العيش والتعلم والارتقاء يومًا بعد يوم.",
   "contact me": "تواصل معي",
   "powerd by mes": "مدعوم مني",
@@ -56,5 +56,13 @@
   "I can integrate or build a custom CMS to help you manage your website’s content easily.": "أقدر أدمج أو أطوّر نظام إدارة محتوى مخصص يساعدك تدير محتوى موقعك بكل سهولة.",
   "Technical Consultation": "استشارات تقنية",
   "our services": "خدماتي",
-  "View all services": "مشاهدة جميع الخدمات"
+  "View all services": "مشاهدة جميع الخدمات",
+  "frontend": "الواجهة الأمامية",
+  "backend": "الواجهة الخلفية",
+  "tools": "الأدوات والتقنيات",
+  "my skills": "مهاراتي",
+  "years of experience": "سنوات من الخبرة",
+  "client": "عميل",
+  "completed project": "مشاريع مكتملة",
+  "Welcome to the portfolio of Majed Elshafey – a passionate Full Stack Developer specializing in React.js and PHP Laravel. Explore projects, skills, and contact details all in one place.": "مرحبًا بك في البورتفوليو الخاص بماجد الشافعي – مطور فل ستاك متخصص في React.js و PHP Laravel. تصفح المشاريع، المهارات، ومعلومات التواصل بسهولة."
 }

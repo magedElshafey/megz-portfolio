@@ -2,6 +2,8 @@
 import { Nav } from "../types/Nav";
 import { Socials } from "../types/Socials";
 import { Service } from "../types/Services";
+import { Skill } from "../types/Skill";
+import { Statistic } from "../types/Statistics";
 // assets
 import { FaLinkedin, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -23,6 +25,36 @@ import serv15 from "../assets/serv-15.png";
 import serv16 from "../assets/serv-16.png";
 import serv17 from "../assets/serv-17.png";
 import serv18 from "../assets/serv-18.png";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaGithub,
+  FaSass,
+  FaLaravel,
+  FaPhp,
+  FaNode,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
+  SiMui,
+  SiAntdesign,
+  SiAxios,
+  SiReactquery,
+  SiReactrouter,
+  SiJquery,
+  SiMysql,
+  SiPostman,
+  SiVercel,
+  SiReact,
+  SiI18Next,
+} from "react-icons/si";
+
 export const navLinks: Nav[] = [
   {
     name: "Home",
@@ -183,3 +215,61 @@ export const service: Service[] = [
       "I can integrate or build a custom CMS to help you manage your website’s content easily.",
   },
 ];
+export const skills: Skill = {
+  frontend: [
+    { name: "HTML", icon: FaHtml5, class: "text-orange-600" },
+    { name: "CSS", icon: FaCss3Alt, class: "text-blue-600" },
+    { name: "JavaScript", icon: FaJs, class: "text-yellow-400" },
+    { name: "TypeScript", icon: SiTypescript, class: "text-blue-500" },
+    { name: "React", icon: FaReact, class: "text-cyan-400" },
+    { name: "Next.js", icon: SiNextdotjs, class: "" },
+    { name: "React Native", icon: SiReact, class: "text-cyan-400" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, class: "text-sky-400" },
+    { name: "Bootstrap", icon: FaBootstrap, class: "text-purple-600" },
+    { name: "Material UI", icon: SiMui, class: "text-blue-500" },
+    { name: "ANT Design", icon: SiAntdesign, class: "text-red-400" },
+  ],
+  backend: [
+    { name: "PHP", icon: FaPhp, class: "text-indigo-700" },
+    { name: "Laravel", icon: FaLaravel, class: "text-red-600" },
+    { name: "MySQL", icon: SiMysql, class: "text-blue-500" },
+    { name: "Node.js", icon: FaNode, class: "text-green-600" },
+  ],
+  tools: [
+    {
+      name: "Redux Toolkit",
+      icon: SiRedux,
+      class: 'className="text-purple-500"',
+    },
+    { name: "Axios", icon: SiAxios, class: "text-yellow-500" },
+    { name: "React Query", icon: SiReactquery, class: "text-red-500" },
+    { name: "React Router", icon: SiReactrouter, class: "text-pink-500" },
+    { name: "react-i18next", icon: SiI18Next, class: "text-indigo-500" },
+    { name: "SASS", icon: FaSass, class: "text-pink-400" },
+    { name: "GitHub", icon: FaGithub, class: "" },
+    { name: "Postman", icon: SiPostman, class: "text-orange-500" },
+    { name: "jQuery", icon: SiJquery, class: "text-blue-400" },
+    { name: "Vercel", icon: SiVercel, class: "text-orange-500" },
+  ],
+};
+export const stats: Statistic[] = [
+  {
+    id: 1,
+    number: 3,
+    desc: "years of experience",
+  },
+  {
+    id: 2,
+    number: 25,
+    desc: "client",
+  },
+  {
+    id: 3,
+    number: 75,
+    desc: "completed project",
+  },
+];
+export const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};

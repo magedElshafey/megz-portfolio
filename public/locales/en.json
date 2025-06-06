@@ -7,7 +7,7 @@
   "skills": "skills",
   "statistics": "statistics",
   "Contact": "Contact",
-  "megz": "Megz | Web Developer",
+  "megz": "Megz | Full Stack Developer (React.js & Laravel)",
   "Living, learning, & leveling up one day at a time.": "Living, learning, & leveling up one day at a time.",
   "follow me": "contact me",
   "powerd by mes": "powerd by me",
@@ -56,5 +56,13 @@
   "Content Management System (CMS) Integration": "Content Management System (CMS) Integration",
   "I can integrate or build a custom CMS to help you manage your website’s content easily.": "I can integrate or build a custom CMS to help you manage your website’s content easily.",
   "our services": "my services",
-  "View all services": "View all services"
+  "View all services": "View all services",
+  "frontend": "frontend",
+  "backend": "backend",
+  "tools": "tools",
+  "my skills": "skills",
+  "years of experience": "years of experience",
+  "client": "client",
+  "completed project": "completed project",
+  "Welcome to the portfolio of Majed Elshafey – a passionate Full Stack Developer specializing in React.js and PHP Laravel. Explore projects, skills, and contact details all in one place.": "Welcome to the portfolio of Maged Elshafey – a passionate Full Stack Developer specializing in React.js and PHP Laravel. Explore projects, skills, and contact details all in one place."
 }

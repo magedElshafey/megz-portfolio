@@ -4,7 +4,6 @@ interface HeadProps {
   title?: string;
   description?: string;
   keywords?: string;
-  favicon?: string;
   image?: string;
   url?: string;
 }
@@ -14,7 +13,6 @@ const Head: React.FC<HeadProps> = ({
   keywords,
   image,
   url = "http://www.megzz.com",
-  favicon,
 }) => {
   const { pathname } = useLocation();
   return (
@@ -44,7 +42,7 @@ const Head: React.FC<HeadProps> = ({
       {/* <meta name="twitter:site" content="@yourtwitterhandle" /> */}
 
       {/* Favicon */}
-      <link rel="icon" type="image/svg+xml" href={favicon} />
+      {/* <link rel="icon" type="image/svg+xml" href={favicon} /> */}
 
       {/* Canonical Link */}
       <link rel="canonical" href={url} />
